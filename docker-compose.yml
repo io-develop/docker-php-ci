@@ -1,38 +1,50 @@
 version: '3'
 services:
 
-  tests_php54:
+  php_54:
     build:
       context: .
       args:
-        - IMAGE=php:5.4
+        IMAGE: php:5.4
+        PACKAGES: git zip unzip libicu-dev
+        PHPMODS: mbstring intl
 
-  tests_php55:
+  php_55:
     build:
       context: .
       args:
-        - IMAGE=php:5.5
+        IMAGE: php:5.5
+        PACKAGES: git zip unzip libicu-dev
+        PHPMODS: intl
 
-  tests_php56:
+  php_56:
     build:
       context: .
       args:
-        - IMAGE=php:5.6
+        IMAGE: php:5.6
+        PACKAGES: git zip unzip libicu-dev
+        PHPMODS: intl
 
-  tests_php70:
+  php_70:
     build:
       context: .
       args:
-        - IMAGE=php:7.0
+        IMAGE: php:7.0
+        PACKAGES: git zip unzip libicu-dev
+        PHPMODS: intl
 
-  tests_php71:
+  php_71:
     build:
       context: .
       args:
-        - IMAGE=php:7.1
+        IMAGE: php:7.1
+        PACKAGES: git zip unzip libicu-dev
+        PHPMODS: intl
 
-  tests_php72:
+  php_72:
     build:
       context: .
       args:
-        - IMAGE=php:7.2
+        IMAGE: php:7.2
+        PACKAGES: git zip unzip libicu-dev
+        PHPMODS: intl
