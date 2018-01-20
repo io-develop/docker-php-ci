@@ -1,0 +1,38 @@
+version: '3'
+services:
+
+  tests_php54:
+    build:
+      context: .
+      args:
+        - IMAGE=php:5.4
+
+  tests_php55:
+    build:
+      context: .
+      args:
+        - IMAGE=php:5.5
+
+  tests_php56:
+    build:
+      context: .
+      args:
+        - IMAGE=php:5.6
+
+  tests_php70:
+    build:
+      context: .
+      args:
+        - IMAGE=php:7.0
+
+  tests_php71:
+    build:
+      context: .
+      args:
+        - IMAGE=php:7.1
+
+  tests_php72:
+    build:
+      context: .
+      args:
+        - IMAGE=php:7.2
