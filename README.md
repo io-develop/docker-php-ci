@@ -13,7 +13,7 @@ Docker config for responsive Unit Testing / Continous Integration of the __Compo
         ]
     }
 ```
-* Check configured PHP versions in the __docker-compose.yml__
+* Uncomment and configure PHP versions in the __docker-compose.yml__
 * Open terminal and change directory to the __root of your project__
 * Start installation by `docker-compose up --build`
 

@@ -1,50 +1,58 @@
 version: '3'
 services:
 
-  php_54:
-    build:
-      context: .
-      args:
-        IMAGE: php:5.4
-        PACKAGES: git zip unzip libicu-dev
-        PHPMODS: mbstring intl
+#  php_54:
+#    build:
+#      context: .
+#      args:
+#        IMAGE: php:5.4
+#        PACKAGES: git zip unzip libicu-dev
+#        PHPMODS: mbstring intl
 
-  php_55:
-    build:
-      context: .
-      args:
-        IMAGE: php:5.5
-        PACKAGES: git zip unzip libicu-dev
-        PHPMODS: intl
+#  php_55:
+#    build:
+#      context: .
+#      args:
+#        IMAGE: php:5.5
+#        PACKAGES: git zip unzip libicu-dev
+#        PHPMODS: intl
 
-  php_56:
-    build:
-      context: .
-      args:
-        IMAGE: php:5.6
-        PACKAGES: git zip unzip libicu-dev
-        PHPMODS: intl
+#  php_56:
+#    build:
+#      context: .
+#      args:
+#        IMAGE: php:5.6
+#        PACKAGES: git zip unzip libicu-dev
+#        PHPMODS: intl
 
-  php_70:
-    build:
-      context: .
-      args:
-        IMAGE: php:7.0
-        PACKAGES: git zip unzip libicu-dev
-        PHPMODS: intl
+#  php_70:
+#    build:
+#      context: .
+#      args:
+#        IMAGE: php:7.0
+#        PACKAGES: git zip unzip libicu-dev
+#        PHPMODS: intl
 
-  php_71:
-    build:
-      context: .
-      args:
-        IMAGE: php:7.1
-        PACKAGES: git zip unzip libicu-dev
-        PHPMODS: intl
+#  php_71:
+#    build:
+#      context: .
+#      args:
+#        IMAGE: php:7.1
+#        PACKAGES: git zip unzip libicu-dev
+#        PHPMODS: intl
 
-  php_72:
+#  php_72:
+#    build:
+#      context: .
+#      args:
+#        IMAGE: php:7.2
+#        PACKAGES: git zip unzip libicu-dev
+#        PHPMODS: intl
+
+  php_latest:
     build:
       context: .
       args:
-        IMAGE: php:7.2
+        IMAGE: php:latest
         PACKAGES: git zip unzip libicu-dev
         PHPMODS: intl
