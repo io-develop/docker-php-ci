@@ -5,7 +5,7 @@ Docker config for responsive Unit Testing / Continous Integration of the __Compo
 * Clone this repo and make it as a __root of your project__
 * Place your project sources in the __./sources__ directory (or pass that folder as __$SRCDIR__ env)
 * A valid __composer.json__ must exist in the project directory
-* By default __composer.json__ must contain __scripts > test__ entry. Example:
+* By default the __composer.json__ must contain a __scripts > test__ entry. For example:
 ```json
     "scripts": {
         "test": [
