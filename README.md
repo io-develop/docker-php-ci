@@ -1,9 +1,9 @@
 # Docker PHP CI
-Docker-compose config for PHP projects based on __Composer__ to speed up Unit Testing or Contionus Integration.
+Docker config for responsive Unit Testing / Continous Integration of the __Composer based__ PHP projects
 
 ## How to set up
-* Clone this repo and make it as __root of your project__
-* Place your project in __./sources__ directory (or pass the project folder as __$SRCDIR__ env)
+* Clone this repo and make it as a __root of your project__
+* Place your project sources in the __./sources__ directory (or pass that folder as __$SRCDIR__ env)
 * A valid __composer.json__ must exist in the project directory
 * By default __composer.json__ must contain __scripts > test__ entry. Example:
 ```json
@@ -14,14 +14,15 @@ Docker-compose config for PHP projects based on __Composer__ to speed up Unit Te
     }
 ```
 * Check configured PHP versions in the __docker-compose.yml__
-* Run the installation from __root of your project__ by cli `docker-compose up --build`
+* Open terminal and change directory to the __root of your project__
+* Start installation by `docker-compose up --build`
 
-## How to test a project
+## How to run a project testing
 Run cli command `docker-compose up --build`.
 
-_* You don't need to manually start composer re-build. Any changes of project source folder will be applied
-by default via `composer update` command in docker-entrypoint.sh_
+_* You don't need manually start a composer re-build. Any changes of the project sources will be applied
+by default via `composer update` command in the docker-entrypoint.sh_
 
 ## How to customize test running
-Default __docker-entrypoint.sh__ contains `composer run test` where `test` is __scripts > test__ section
+Default __docker-entrypoint.sh__ contains `composer run test` where `test` is the __scripts > test__ section
 of the __composer.json__
